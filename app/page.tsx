@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { ListManagement } from "@/components/ListManagement";
+import { AppLayout } from "@/components/layout/AppLayout";
 
 export default function Home() {
   return (
-    <>
-      <Button>Click me</Button>
-    </>
+    <AppLayout>
+      <ListManagement />
+    </AppLayout>
   );
 }
