@@ -40,7 +40,23 @@ A modern, full-featured list management application built with Next.js, React, T
 ### Prerequisites
 
 - Node.js 18+ installed
-- npm, yarn, pnpm, or bun
+- pnpm package manager
+
+#### Installing pnpm
+
+Install pnpm using one of these methods:
+
+```bash
+# Using npm
+npm install -g pnpm
+
+# Using corepack (recommended, comes with Node.js 16.9+)
+corepack enable
+corepack prepare pnpm@latest --activate
+
+# Using standalone script
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
 
 ### Installation
 
@@ -52,12 +68,12 @@ cd savvy-tech-test
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Run the development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
@@ -65,8 +81,26 @@ npm run dev
 ### Build for Production
 
 ```bash
-npm run build
-npm start
+pnpm build
+pnpm start
+```
+
+### Testing
+
+The project uses Vitest for testing. Run tests with:
+
+```bash
+# Run tests in watch mode
+pnpm test
+
+# Run tests once
+pnpm test:run
+
+# Run tests with UI
+pnpm test:ui
+
+# Run tests with coverage
+pnpm test:coverage
 ```
 
 ### Docker Deployment
