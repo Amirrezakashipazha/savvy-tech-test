@@ -46,7 +46,7 @@ A modern, full-featured list management application built with Next.js, React, T
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone http://github.com/Amirrezakashipazha/savvy-tech-test
 cd savvy-tech-test
 ```
 
